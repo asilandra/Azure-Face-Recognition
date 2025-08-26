@@ -39,7 +39,7 @@ The dataset consisted of **300 high-resolution images** (300 dpi), evenly distri
 
 The following screenshot shows the complete pipeline built in Azure Machine Learning Studio:
 
-![Azure ML Pipeline Diagram](/assets/fullazurepipeline.png)
+![Azure ML Pipeline Diagram](/assets/fullazurepipeline.jpg)
 
 *The pipeline shows the flow from data input, through transformation and splitting, to training with DenseNet and final evaluation.*
 
@@ -75,11 +75,13 @@ The model achieved an overall accuracy of 0.9. The confusion matrix below shows 
 
 ![Confusion Matrix Results](confusion-matrix.png)
 
+
 *The confusion matrix shows successful classification rates of 90% for Angelina Jolie, 90% for Brad Pitt, and 100% for Denzel Washington.*
 
 For comparison, the Azure Custom Vision service achieved even higher metrics:
 
 ![Custom Vision Performance](assets/Training_Results.png)
+![Custom Vision Performance](assets/Performance_Per_Tag.png)
 ##  Conclusion & Learnings
 
 This project provided valuable insights into two distinct approaches to AI on Azure:
