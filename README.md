@@ -5,7 +5,6 @@ This project involved building and comparing two different facial recognition mo
 ##  Project Structure
 Azure-Face-Recognition/
 ├── README.md # This file (Project overview & documentation)
-├── Assigment_2.pdf # Full project report
 └── assets/ # Folder for screenshots of results
 └── confusion_matrix.png
 
@@ -36,6 +35,14 @@ The dataset consisted of **300 high-resolution images** (300 dpi), evenly distri
   - Trained a DenseNet model on the prepared data.
   - Evaluated the model's performance on the validation set.
 
+## Azure ML Pipeline Architecture
+
+The following screenshot shows the complete pipeline built in Azure Machine Learning Studio:
+
+![Azure ML Pipeline Diagram](/assets/fullazurepipeline.png)
+
+*The pipeline shows the flow from data input, through transformation and splitting, to training with DenseNet and final evaluation.*
+
 ### 2. Azure Custom Vision
 - **Training Type:** Quick Training
 - **Process:** Uploaded images and tagged them with the respective celebrity names. The service handled the rest of the pipeline automatically.
@@ -62,6 +69,17 @@ The dataset consisted of **300 high-resolution images** (300 dpi), evenly distri
   | Angelina Jolie      | 100.0%    | 100.0% | 100.0%|
   | Brad Pitt           | 96.0%     | 96.0%  | 99.8% |
 
+## 📈 Results & Evaluation
+
+The model achieved an overall accuracy of 0.9. The confusion matrix below shows the performance per class:
+
+![Confusion Matrix Results](confusion-matrix.png)
+
+*The confusion matrix shows successful classification rates of 90% for Angelina Jolie, 90% for Brad Pitt, and 100% for Denzel Washington.*
+
+For comparison, the Azure Custom Vision service achieved even higher metrics:
+
+![Custom Vision Performance](assets/Training_Results.png)
 ##  Conclusion & Learnings
 
 This project provided valuable insights into two distinct approaches to AI on Azure:
