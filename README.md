@@ -81,7 +81,7 @@ The model achieved an overall accuracy of 0.9. The confusion matrix below shows 
 For comparison, the Azure Custom Vision service achieved even higher metrics:
 
 ![Custom Vision Performance](assets/Training_Results.png)
-![Custom Vision Performance](assets/Performance Per Tag.png)
+![Custom Vision Performance](assets/Performance_Per_Tag.png)
 ##  Conclusion & Learnings
 
 This project provided valuable insights into two distinct approaches to AI on Azure:
